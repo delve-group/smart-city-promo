@@ -9,72 +9,97 @@
     {
       "id": "01_gotowanie",
       "title": "Dziewczyna gotuje — widoczna twarz",
-      "duration": 4,
-      "references": ["F73EF4C8-CBDC-49E3-8AE6-617D2CB5AB26.PNG"],
-      "reference_notes": "Dokładna referencja: dziewczyna ze srebrnymi słuchawkami, granatową bluzą i patelnią w jasnej kuchni.",
-      "prompt": "Image 1 defines the girl, silver over-ear headphones, navy sweatshirt, kitchen and frying pan. Eye-level medium shot from the front, her entire face clearly visible in the upper middle of the wide frame and the pan in the foreground. From 0 to 2 seconds she calmly stirs the vegetables and pasta with a wooden spatula, looking down at the food. From 2 to 4 seconds she raises her eyes toward the camera with a small relaxed smile while continuing one gentle stirring motion. A tiny forward camera move, warm window light, faint steam above the pan. Audio: quiet sizzling and soft wooden utensil sounds. Keep her face unobstructed."
+      "duration": 3,
+      "references": [
+        "295E651B-AF26-4644-8302-C4DB6A917B71.PNG",
+        "F73EF4C8-CBDC-49E3-8AE6-617D2CB5AB26.PNG"
+      ],
+      "reference_notes": "Image 1: twarz dziewczyny ze spojrzeniem w dół. Image 2: ta sama dziewczyna, srebrne słuchawki, granatowa bluza, kuchnia i patelnia. Telefon z Image 1 nie jest elementem tego ujęcia.",
+      "prompt": "Image 1 defines the girl's exact facial identity and downward gaze; Image 2 defines the same girl, silver over-ear headphones, navy sweatshirt, kitchen and frying pan. Eye-level front three-quarter medium shot, her entire face clearly visible above the pan in a natural horizontal composition. At the very first frame her head is already slightly bowed and her eyes are directed down at the food. Throughout all 3 seconds she calmly stirs the vegetables and pasta with a wooden spatula, watching the pan with a relaxed, absorbed expression. Her hands only cook, with no phone in this shot. She never lifts her gaze toward the lens, the viewer or any screen; there is no eye contact with the camera at any point. A tiny forward camera move, warm window light, faint steam. Audio: quiet sizzling and soft utensil sounds."
     },
     {
       "id": "02_babcia_prysznic",
       "title": "Babcia myje włosy pod działającym prysznicem",
       "duration": 4,
-      "references": ["36221129-5D08-4A88-84A8-17BF0CAD1498.PNG", "3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG"],
+      "references": [
+        "36221129-5D08-4A88-84A8-17BF0CAD1498.PNG",
+        "3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG"
+      ],
       "reference_notes": "Dwie referencje tej samej babci i okrągłej chromowanej deszczownicy w łazience z ciemnymi kaflami.",
       "prompt": "Images 1 and 2 define the same elderly grandmother, gray wet hair, circular chrome rainfall shower and dark tiled bathroom. Respectful close-up cropped strictly from the shoulders upward, with her head and the shower head visible together in a horizontal composition. From 0 to 2 seconds a steady stream falls from the shower while she gently massages a little shampoo into her hair. From 2 to 4 seconds she tilts her head slightly back, closes her eyes comfortably and continues washing; light shampoo lather remains on the crown of her head. Locked camera, subtle steam and realistic water droplets. Audio: steady shower water. The torso remains outside the frame."
     },
     {
       "id": "03_garnek_brak_wody",
-      "title": "Dziewczyna próbuje nalać wodę do garnka — kran nie działa",
-      "duration": 5,
-      "references": ["C9BBBA7B-D4C0-42B5-9AEA-E452A5060214.PNG", "F73EF4C8-CBDC-49E3-8AE6-617D2CB5AB26.PNG"],
+      "title": "Woda sama przestaje lecieć do garnka — kran pozostaje otwarty",
+      "duration": 4,
+      "references": [
+        "C9BBBA7B-D4C0-42B5-9AEA-E452A5060214.PNG",
+        "F73EF4C8-CBDC-49E3-8AE6-617D2CB5AB26.PNG"
+      ],
       "reference_notes": "Image 1: dokładny pusty garnek, zlew i kran. Image 2: tożsamość dziewczyny i jej strój.",
-      "prompt": "Image 1 defines the curved stainless faucet, empty metal pot, sink and wooden kitchen worktop. Image 2 defines the girl with long blonde hair, navy sweatshirt and silver headphones. Wide three-quarter medium shot showing her face on the right and the faucet and pot on the left. From 0 to 1.5 seconds she places the empty pot directly below the spout. From 1.5 to 3 seconds she fully opens the faucet handle, but absolutely no water comes out. From 3 to 5 seconds she looks from the dry spout down into the empty pot, then slightly raises her eyebrows in puzzled frustration. Keep the pot empty and the faucet dry throughout. Audio: metal pot touching the sink, handle click, quiet room ambience."
+      "prompt": "Image 1 defines the curved stainless faucet, metal pot, sink and wooden kitchen worktop. Image 2 defines the girl with long blonde hair, navy sweatshirt and silver headphones. Wide three-quarter medium shot showing her face on the right and the faucet, clearly visible open handle and pot on the left. At the very first frame the pot is already beneath the spout, the faucet handle is already fully open and a normal stream of water is filling the pot. Her hands are resting on the counter far away from the faucet handle throughout the entire shot. From 0 to 1 second water flows normally. From 1 to 2 seconds the water supply fails on its own: the stream dwindles into a few last drops and stops completely. From 2 to 4 seconds she looks from the dry spout down into the partially filled pot, then frowns in puzzled frustration. The faucet handle stays in exactly the same fully open position from the first frame to the last. She never touches, turns or closes the handle. Audio: running water fades to final droplets and quiet room ambience."
     },
     {
       "id": "04_prysznic_przestaje_leciec",
       "title": "Woda pod prysznicem ustaje — ostatnie krople i piana na włosach",
       "duration": 5,
-      "references": ["3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG", "36221129-5D08-4A88-84A8-17BF0CAD1498.PNG"],
+      "references": [
+        "3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG",
+        "36221129-5D08-4A88-84A8-17BF0CAD1498.PNG"
+      ],
       "reference_notes": "Zdjęcia definiują babcię i deszczownicę; piana oraz zanik strumienia są nową akcją.",
       "prompt": "Images 1 and 2 define the grandmother and the same round chrome shower head against dark tiles. Close-up cropped strictly above the shoulders, grandmother's face and shampoo-covered hair below the shower head in the same wide frame. At 0 seconds water is running and a clearly visible white shampoo lather covers the top of her gray hair. From 0 to 2 seconds the stream rapidly weakens. From 2 to 3 seconds only three final separate droplets fall, then the shower becomes completely dry. From 3 to 5 seconds she stops moving, opens her eyes and looks upward directly at the dry shower head with a confused, mildly annoyed expression. The thick foam stays on her hair. Audio: running water fades to a few drops, then silence."
     },
     {
       "id": "05_dziewczyna_zgloszenie",
       "title": "Dziewczyna zgłasza brak wody w aplikacji",
-      "duration": 5,
-      "references": ["295E651B-AF26-4644-8302-C4DB6A917B71.PNG", "C9BBBA7B-D4C0-42B5-9AEA-E452A5060214.PNG"],
-      "reference_notes": "Dokładna referencja dziewczyny z telefonem w kuchni; zlew łączy ujęcie z awarią.",
-      "prompt": "Image 1 defines the girl, her navy sweatshirt, silver headphones, smartphone and kitchen. Image 2 defines the nearby dry sink and pot. Three-quarter medium close-up showing her face and the smartphone screen at a readable angle. From 0 to 2 seconds she opens a municipal service app and selects the water outage category, represented by a water-drop icon with a warning mark. From 2 to 4 seconds she taps the large report button once. From 4 to 5 seconds the interface displays a simple green confirmation checkmark and she gives a small satisfied nod. The dry faucet remains in the background. Keep the screen interface simple and stable. Audio: two soft taps and one short confirmation sound."
+      "duration": 3,
+      "references": [
+        "295E651B-AF26-4644-8302-C4DB6A917B71.PNG"
+      ],
+      "reference_notes": "Wyłącznie wskazane zdjęcie dziewczyny z telefonem w kuchni. Telefon przez cały czas ma ekran do dziewczyny i tył obudowy do kamery.",
+      "prompt": "Image 1 defines the girl's exact face, long blonde hair, navy sweatshirt, silver headphones, smartphone and kitchen. Preserve the phone orientation from the reference: the screen faces the girl, and only the back of the phone with its rear camera is visible to the viewer. Eye-level front three-quarter medium close-up showing her focused face and hands, with the frying pan and familiar kitchen softly behind her. From 0 to 1 second she looks down at her phone and opens the municipal water-outage reporting flow. From 1 to 2 seconds her thumb makes two purposeful taps on the screen facing away from the camera. From 2 to 3 seconds a short confirmation sound is heard and she gives a small relieved nod, still looking at her phone. Keep the phone screen fully hidden throughout, including during camera movement; no insert, no over-the-shoulder view, no readable interface, no reflected screen, no phone rotation toward the viewer. One gentle camera push. Audio: soft taps and one short confirmation chime."
     },
     {
       "id": "06_babcia_zgloszenie",
       "title": "Babcia zgłasza problem w aplikacji, z pianą na głowie",
-      "duration": 5,
-      "references": ["3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG"],
-      "reference_notes": "Referencja tożsamości babci i łazienki. Nowa sytuacja: babcia wyszła spod prysznica, jest w szlafroku, ma pianę i telefon.",
-      "prompt": "Image 1 defines the elderly grandmother's face, gray hair and dark tiled bathroom. Recompose her outside the shower beside the bathroom sink, wearing a fully closed light-colored bathrobe; a conspicuous patch of white shampoo foam remains on her hair. Horizontal medium close-up showing her face and smartphone, with the dry chrome shower softly visible behind her. From 0 to 2 seconds she looks at the phone with patient annoyance and selects the water-drop warning icon in a municipal app. From 2 to 4 seconds she taps the large report button. From 4 to 5 seconds a green confirmation checkmark appears and she exhales with relief. Keep the foam in place. Audio: quiet bathroom ambience, soft tap and confirmation chime."
+      "duration": 3,
+      "references": [
+        "Unknown-6.png"
+      ],
+      "reference_notes": "Wskazane Unknown-6.png: ta sama babcia w białym szlafroku z telefonem. Tylko tył telefonu widoczny; dynamiczna kamera pozostaje po stronie plecków telefonu.",
+      "prompt": "Image 1 defines the elderly grandmother's exact face, wet gray hair, fully closed white bathrobe, dark tiled bathroom and black smartphone. The shot starts immediately with her already outside the shower holding the phone as in the reference. A small patch of shampoo lather remains on the crown of her wet hair. Dynamic horizontal medium close-up: a short energetic dolly-in with a slight lateral arc across the front of her face, always staying on the back-facing side of the phone. From 0 to 1 second she looks down at the phone with patient annoyance. From 1 to 2 seconds she makes two deliberate thumb taps to report the water outage in the municipal app. From 2 to 3 seconds she hears the confirmation chime and softly exhales with relief. The screen faces only her; the camera sees only the black rear casing and rear cameras for the entire clip. Never reveal the display, its reflection or any interface, and never cut to a phone-screen insert. Keep her identity, robe, foam and phone orientation stable. Audio: quiet bathroom ambience, taps and a brief confirmation chime."
     },
     {
       "id": "07_chlopak_pies_wzruszenie",
       "title": "Chłopak z psem wzrusza ramionami",
       "duration": 3,
-      "references": ["A9E0ADED-F40A-4CB3-A9A0-CA077525562D.PNG", "Cozy Living Room Portrait.png"],
+      "references": [
+        "A9E0ADED-F40A-4CB3-A9A0-CA077525562D.PNG",
+        "Cozy Living Room Portrait.png"
+      ],
       "reference_notes": "Dokładna referencja chłopaka ze smyczą i golden retrieverem; portret dodatkowo utrwala twarz.",
       "prompt": "Image 1 defines the boy in a navy BOSTON hoodie, gray sweatpants, golden retriever, leash and sunlit living room. Image 2 is a supplementary reference for the same boy's face. Horizontal medium shot with the boy on the left and the dog on the right. From 0 to 1 second the boy looks toward his sister just off camera, holding the leash loosely. From 1 to 2 seconds he raises both shoulders in one clear exaggerated shrug, lifting his free palm slightly and raising his eyebrows. From 2 to 3 seconds he lowers his shoulders with a mischievous half-smile. The dog tilts its head once. Audio: faint collar jingle and quiet room tone."
     },
     {
       "id": "08_dziewczyna_do_drzwi",
-      "title": "Dziewczyna rusza do drzwi, chłopak i pies podążają za nią",
-      "duration": 4,
-      "references": ["A9E0ADED-F40A-4CB3-A9A0-CA077525562D.PNG", "5D17CCCD-D15C-4B21-8786-7E8C6CAB48E6.PNG"],
-      "reference_notes": "Image 1 określa drzwi wejściowe, chłopaka i psa. Image 2 określa siostrę, rodzeństwo i salon.",
-      "prompt": "Image 1 defines the sunlit living room, front door, boy, golden retriever and leash. Image 2 defines the sister with long blonde hair and navy sweatshirt, and the same sibling pair. Horizontal medium-wide shot opening on the girl's face in three-quarter view. From 0 to 1 second she glances toward her brother with an excited decisive smile. From 1 to 4 seconds she pivots and runs toward the front door; the boy follows one step behind, guiding the golden retriever on the loosely held leash. A quick smooth pan follows their movement across the room toward the doorway. The girl reaches the doorway first. Audio: quick footsteps, leash jingle and clothing rustle."
+      "title": "Chłopak z psem wzrusza ramionami, dziewczyna wbiega w kadr i biegną do wyjścia",
+      "duration": 5,
+      "references": [
+        "A9E0ADED-F40A-4CB3-A9A0-CA077525562D.PNG",
+        "F73EF4C8-CBDC-49E3-8AE6-617D2CB5AB26.PNG"
+      ],
+      "reference_notes": "Image 1: stojący chłopak z psem, smycz i salon przy drzwiach. Image 2: dokładna twarz siostry i granatowa bluza; bez słuchawek podczas biegu.",
+      "prompt": "Image 1 defines the boy in a navy BOSTON hoodie and gray sweatpants already standing beside his golden retriever, loosely holding its leash in the sunlit living room near the front entrance. Image 2 defines his sister's exact face, long blonde hair and navy sweatshirt; she is dressed in gray sweatpants and wears no headphones here. The opening horizontal medium-wide frame contains only the standing boy and dog; the sister is completely outside the frame. From 0 to 1.3 seconds the boy clearly shrugs both shoulders once with a playful raised-eyebrow expression, and the dog looks up. Only after the shrug, from 1.3 to 2.5 seconds the sister runs into frame from the left, passing beside the boy toward the front entrance. From 2.5 to 5 seconds the boy immediately joins her and they run together in the same direction toward the open front door, with the dog following on the loose leash. A smooth fast pan tracks their movement toward the exit. They begin standing on the floor near the entrance; nobody sits on or rises from a sofa. Audio: collar jingle, fast footsteps and clothing rustle."
     },
     {
       "id": "09a_kierowca_powiadomienie",
       "title": "Mężczyzna w aucie dostaje powiadomienie o braku wody",
       "duration": 4,
-      "references": ["B55D1413-B788-40A7-8C3B-A52D2932EBD5.PNG", "D18E2EF1-5C59-450B-9DFE-3801B00B26ED.PNG"],
+      "references": [
+        "B55D1413-B788-40A7-8C3B-A52D2932EBD5.PNG",
+        "D18E2EF1-5C59-450B-9DFE-3801B00B26ED.PNG"
+      ],
       "reference_notes": "Dokładne referencje tego samego kierowcy z telefonem i wnętrza auta.",
       "prompt": "Image 1 defines the adult man with tousled brown hair, short beard, charcoal quarter-zip fleece and his phone inside the car. Image 2 defines the same driver and vehicle interior. Horizontal passenger-side medium close-up; the car is stationary in a roadside parking space. At 0 to 1 second his phone emits one notification sound. From 1 to 3 seconds he raises the phone and reads a municipal alert with a water-drop warning icon and a short Polish line: 'Brak wody: ulice X, Y, Z'. His expression changes from relaxed to practical concern. From 3 to 4 seconds he nods once, lowers the phone into its holder and looks forward, deciding to visit a shop. Audio: notification chime and soft idling engine."
     },
@@ -82,47 +107,67 @@
       "id": "09b_kierowca_zawraca",
       "title": "Kierowca zawraca i jedzie do sklepu po wodę",
       "duration": 4,
-      "references": ["D18E2EF1-5C59-450B-9DFE-3801B00B26ED.PNG", "B55D1413-B788-40A7-8C3B-A52D2932EBD5.PNG"],
+      "references": [
+        "D18E2EF1-5C59-450B-9DFE-3801B00B26ED.PNG",
+        "B55D1413-B788-40A7-8C3B-A52D2932EBD5.PNG"
+      ],
       "reference_notes": "Ta sama twarz, strój oraz auto. Nowa akcja: powolne zawracanie w szerokim, pustym wyjeździe.",
       "prompt": "Image 1 defines the driver, charcoal fleece, car interior and autumn daylight. Image 2 provides an additional identity reference. Horizontal passenger-side medium shot of the same driver, with the windshield and steering wheel visible. The phone is already secured in its holder. From 0 to 1 second he glances left and activates the turn signal. From 1 to 3 seconds he turns the wheel through one smooth slow U-turn in a broad empty parking-area exit; the road and autumn trees outside rotate naturally relative to the car. From 3 to 4 seconds he straightens the steering wheel and drives toward a small grocery shop visible ahead. Audio: indicator clicks, engine hum and gentle tire noise."
     },
     {
       "id": "10_rodzenstwo_bloto",
-      "title": "Rodzeństwo wybiega na dwór i biegnie po błocie",
-      "duration": 5,
-      "references": ["5D17CCCD-D15C-4B21-8786-7E8C6CAB48E6.PNG", "A9E0ADED-F40A-4CB3-A9A0-CA077525562D.PNG"],
-      "reference_notes": "Referencje tożsamości, ubrań i psa. Na zdjęciach brak pleneru; błotnista ścieżka powstaje w generacji.",
-      "prompt": "Image 1 defines the sister with long blonde hair, younger brother, their navy sweatshirts, gray sweatpants and golden retriever. Image 2 reinforces the boy and dog. New outdoor setting: a muddy garden path beside their house after rain, warm autumn daylight. Horizontal medium-wide tracking shot from a low three-quarter angle. From 0 to 1 second the siblings run out of the open back doorway onto the path, now wearing outdoor trainers. From 1 to 4 seconds they run side by side through two shallow muddy puddles; each footfall sends small realistic splashes onto their trouser legs. From 4 to 5 seconds they laugh and continue running as the golden retriever trots alongside. Audio: playful laughter, footsteps and wet splashes."
+      "title": "To samo rodzeństwo biegnie po błocie w parku",
+      "duration": 4,
+      "references": [
+        "5D17CCCD-D15C-4B21-8786-7E8C6CAB48E6.PNG",
+        "F73EF4C8-CBDC-49E3-8AE6-617D2CB5AB26.PNG",
+        "Cozy Living Room Portrait.png",
+        "A9E0ADED-F40A-4CB3-A9A0-CA077525562D.PNG"
+      ],
+      "reference_notes": "Image 1: proporcje rodzeństwa, ubrania i golden retriever. Image 2: dokładna twarz siostry. Image 3: dokładna twarz chłopaka. Image 4: chłopak, pies i smycz. Obrazy określają postaci, a ujęcie od pierwszej klatki odbywa się w parku.",
+      "prompt": "Image 1 defines the exact sibling pair, their relative ages and heights, navy tops, gray sweatpants and golden retriever. Image 2 is a close facial identity reference for the same older sister with long wavy blonde hair. Image 3 is a close facial identity reference for the same younger boy with tousled brown hair and freckles. Image 4 reinforces the exact boy, navy BOSTON hoodie, dog and loose leash. Preserve these exact faces and ages throughout; keep the sister distinctly taller than her brother. Both wear outdoor trainers and the sister wears no headphones. From the very first frame they are already outdoors on a muddy public-park path between leafy autumn trees, with park benches and open grass in the background. A horizontal low three-quarter tracking shot moves alongside them. Throughout 0 to 4 seconds they run side by side in the same direction through shallow muddy puddles, laughing, as the golden retriever trots alongside; realistic footfalls splash mud onto their trouser legs. The camera remains in the park for the entire shot. No house, doorway, living-room start or location transition. Audio: light laughter, quick footsteps, mud splashes and park ambience."
     },
     {
       "id": "11_sklep_woda",
       "title": "Mężczyzna ładuje zgrzewkę wody do koszyka",
       "duration": 4,
-      "references": ["7F201462-894B-4DDC-A9B4-1E9DFB922343.PNG", "D18E2EF1-5C59-450B-9DFE-3801B00B26ED.PNG"],
+      "references": [
+        "7F201462-894B-4DDC-A9B4-1E9DFB922343.PNG",
+        "D18E2EF1-5C59-450B-9DFE-3801B00B26ED.PNG"
+      ],
       "reference_notes": "Dokładna referencja sklepu, kierowcy, zgrzewki i wózka; drugie zdjęcie łączy jego tożsamość z autem.",
       "prompt": "Image 1 defines the adult man, charcoal quarter-zip fleece, grocery aisle, blue-wrapped pack of bottled water and shopping trolley. Image 2 confirms that this is the same man who received the car notification. Horizontal medium shot from the front-left, face and both hands visible, trolley in the foreground and bottled-water shelf on the right. From 0 to 1 second he firmly grips one water pack with both hands. From 1 to 3 seconds he lifts it off the shelf and lowers it into the trolley with believable weight. From 3 to 4 seconds he releases the settled pack and briefly looks relieved. One steady continuous movement, fixed camera. Audio: plastic wrapping rustle and trolley rattle."
     },
     {
       "id": "12a_rodzenstwo_spojrzenie",
-      "title": "Ubłocone rodzeństwo patrzy na siebie i zrywa się z kanapy",
+      "title": "Rodzeństwo patrzy na siebie i biegnie razem w tę samą stronę",
       "duration": 3,
-      "references": ["526DD4FE-8DA9-43F6-98C9-7CC68123D44C.PNG", "5D17CCCD-D15C-4B21-8786-7E8C6CAB48E6.PNG"],
+      "references": [
+        "526DD4FE-8DA9-43F6-98C9-7CC68123D44C.PNG",
+        "5D17CCCD-D15C-4B21-8786-7E8C6CAB48E6.PNG"
+      ],
       "reference_notes": "Dokładna referencja ubłoconego rodzeństwa z telefonem na kanapie; dodatkowa referencja całego salonu.",
-      "prompt": "Image 1 defines the muddy siblings on the beige sofa with their golden retriever and phone. Image 2 defines the same living room and identities. Horizontal medium two-shot, sister on the left, brother on the right, dog between them. Their gray trouser legs are visibly muddy and outdoor shoes have been removed. From 0 to 1 second the sister reads a simple green water-restored confirmation on her phone. From 1 to 2 seconds she turns to her brother, they meet each other's eyes and exchange a competitive grin. From 2 to 3 seconds both spring to their feet at the same time, beginning a playful race toward the bathroom off camera. The dog remains on the sofa. Audio: brief notification, sofa rustle and quick first footsteps."
+      "prompt": "Image 1 defines the exact muddy siblings on the beige sofa with their golden retriever and phone. Image 2 defines the same living-room layout and identities. Horizontal medium-wide two-shot, sister on the left, brother on the right, dog between them, with the hallway exit clearly visible on screen right. Their gray trouser legs are muddy and outdoor shoes have been removed. From 0 to 0.8 seconds the sister looks at the water-restored notification on her phone, with its screen facing only her. From 0.8 to 1.4 seconds she turns to her brother; they meet each other's eyes and share a competitive grin. From 1.4 to 3 seconds both spring up, pivot toward screen right and run one behind the other into the exact same hallway exit on the right, the sister slightly ahead. Both bodies, gazes and trajectories point to screen right; neither character exits left, splits away or runs toward a different door. The dog remains on the sofa. A quick pan to the right follows both siblings together. Audio: brief notification, sofa rustle and rapid socked footsteps."
     },
     {
       "id": "12b_wyscig_do_lazienki",
-      "title": "Wyścig do otwartej łazienki — dziewczyna wbiega pierwsza",
-      "duration": 5,
-      "references": ["1138938D-312D-4863-AE49-97F54056DDAD.PNG", "526DD4FE-8DA9-43F6-98C9-7CC68123D44C.PNG"],
+      "title": "Szybki wyścig do łazienki — dziewczyna zamyka drzwi przed chłopakiem",
+      "duration": 4,
+      "references": [
+        "1138938D-312D-4863-AE49-97F54056DDAD.PNG",
+        "526DD4FE-8DA9-43F6-98C9-7CC68123D44C.PNG"
+      ],
       "reference_notes": "Dokładna referencja biegu w korytarzu do otwartej łazienki; drugie zdjęcie utrwala twarze i błoto na spodniach.",
-      "prompt": "Image 1 defines the hallway, wooden floor, staircase, open bathroom doorway and the sister running ahead of her brother. Image 2 confirms their faces, navy tops and muddy gray sweatpants. Horizontal medium-wide rear tracking shot looking straight down the hallway toward the visibly open bathroom. From 0 to 1 second both siblings accelerate into the hallway from the living room. From 1 to 3.5 seconds they race directly toward the open bathroom, the sister clearly maintaining a one-step lead. From 3.5 to 5 seconds she crosses the threshold first and turns back with a triumphant playful smile; her brother arrives just afterward and slows outside. Keep the doorway fully open and their paths separate. Audio: quick socked footsteps and a short laugh."
+      "prompt": "Image 1 defines the hallway, wooden floor, staircase, bathroom door and the same sister running ahead of her younger brother. Image 2 confirms their exact faces, navy tops and muddy gray sweatpants. Horizontal medium-wide rear tracking shot looking down the hallway toward the open bathroom. The clip begins mid-sprint, both siblings already moving quickly in the same direction, with the girl a full step ahead. From 0 to 2 seconds they sprint with fast natural footfalls and energetic arm swings directly toward the bathroom, the camera moving quickly behind them. From 2 to 3 seconds the girl alone crosses the threshold, immediately reaches back from inside and rapidly swings the bathroom door shut before the boy can enter. From 3 to 4 seconds she remains completely inside the bathroom behind the fully closed door; the boy brakes outside the door, faces it and raises one hand in playful frustration. The door stays firmly closed through the final frame. The boy never enters the bathroom. No slow motion or pause before closing the door. Audio: fast socked footsteps, one firm door-closing thud, a latch click and her short laugh from behind the closed door."
     },
     {
       "id": "13_babcia_woda_wrocila",
       "title": "Babcia ponownie pod prysznicem — zmywa pianę z włosów",
       "duration": 5,
-      "references": ["36221129-5D08-4A88-84A8-17BF0CAD1498.PNG", "3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG"],
+      "references": [
+        "36221129-5D08-4A88-84A8-17BF0CAD1498.PNG",
+        "3D7A9065-C40C-4AC8-8D51-34E155EF5556.PNG"
+      ],
       "reference_notes": "Te same referencje babci i działającej deszczownicy; finał pokazuje spłukanie resztek piany.",
       "prompt": "Images 1 and 2 define the same elderly grandmother, wet gray hair, circular chrome rainfall shower and dark tiled bathroom as the earlier outage shots. Respectful horizontal close-up cropped strictly above her shoulders; show her face, crown of her head and running shower together. From 0 to 1 second the shower is flowing strongly again and only a small final patch of shampoo foam remains on her hair. From 1 to 3 seconds she moves her head under the stream and gently sweeps her fingers through her hair; water visibly rinses away the remaining foam. From 3 to 5 seconds her hair is completely foam-free and she closes her eyes with a relieved contented smile. Audio: steady shower water and a relaxed exhale."
     }

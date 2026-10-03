@@ -15,8 +15,12 @@ ROOT = Path(__file__).resolve().parent
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "output")
+    parser.add_argument("--config", type=Path, help="Konfiguracja odpowiadająca sprawdzanym plikom.")
     args = parser.parse_args()
-    config = json.loads((ROOT / "scenes.json").read_text(encoding="utf-8"))
+    config_path = args.config or (args.output / "scenes.json")
+    if not config_path.exists():
+        config_path = ROOT / "scenes.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
     review = args.output / "review"
     review.mkdir(parents=True, exist_ok=True)
     items = []

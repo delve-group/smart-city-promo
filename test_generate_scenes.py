@@ -32,13 +32,13 @@ class GenerationTests(unittest.TestCase):
         self.assertNotIn("resolution", payload)
         self.assertNotIn("frameImages", payload["inputs"])
         self.assertTrue(payload["inputs"]["referenceImages"][0].startswith("data:image/png;base64,"))
-        self.assertEqual(payload["duration"], 4)
+        self.assertEqual(payload["duration"], 3)
         self.assertFalse(payload["settings"]["promptExtend"])
 
     def test_all_requested_shots_have_valid_duration_and_references(self):
         scenes = self.config["scenes"]
         self.assertEqual(len(scenes), 15)
-        self.assertEqual(sum(scene["duration"] for scene in scenes), 65)
+        self.assertEqual(sum(scene["duration"] for scene in scenes), 58)
         self.assertTrue(all(3 <= scene["duration"] <= 5 for scene in scenes))
         self.assertTrue(all(scene["reference_paths"] for scene in scenes))
 

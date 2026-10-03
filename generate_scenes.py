@@ -195,13 +195,14 @@ def build_payload(config, scene, task_uuid):
     }
 
 
-def export_prompts(config):
+def export_prompts(config, destination=None):
     lines = [
         "SMART CITY — PROMPTY WAN 3.0 / RUNWARE",
         "Format: poziomy 16:9, 1920×1080. Ujęcia: 3–5 sekund.",
         "Zdjęcia są przypisane po obejrzeniu zawartości. Image 1 / Image 2 odpowiadają kolejności poniżej.",
         "Powiadomienie: ulice X, Y, Z to placeholdery. Czytelność liter w generowanym wideo wymaga kontroli.",
         "Gdy tekst aplikacji musi być dokładny, nałóż docelowy interfejs podczas montażu.",
+        "W scenach zgłoszenia 05 i 06 ekran telefonu pozostaje niewidoczny; widzimy wyłącznie tył obudowy.",
         "",
     ]
     for scene in config["scenes"]:
@@ -211,7 +212,9 @@ def export_prompts(config):
             "Dopasowanie: " + scene["reference_notes"],
             "Prompt:", full_prompt(config, scene), "",
         ])
-    (ROOT / "prompty.txt").write_text("\n".join(lines), encoding="utf-8")
+    destination = destination or ROOT / "prompty.txt"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text("\n".join(lines), encoding="utf-8")
 
 
 def download_video(url, destination, context):
@@ -333,14 +336,14 @@ def main():
     parser.add_argument("--key-dialog", action="store_true", help="Poproś o klucz w ukrytym oknie macOS.")
     parser.add_argument("--scenes", nargs="+", help="Generuj tylko wskazane identyfikatory scen.")
     parser.add_argument("--output", type=Path, default=ROOT / "output")
+    parser.add_argument("--config", type=Path, default=ROOT / "scenes.json", help="Wersja promptów używana do generacji.")
     parser.add_argument("--concurrency", type=int, default=3)
     parser.add_argument("--timeout", type=int, default=1800, help="Limit oczekiwania na pojedynczą scenę, w sekundach.")
     parser.add_argument("--retry-failed", action="store_true", help="Wyślij ponownie zadania zakończone błędem; może naliczyć nowy koszt.")
     args = parser.parse_args()
     if not 1 <= args.concurrency <= 4 or args.timeout < 30:
         parser.error("--concurrency musi być 1–4, a --timeout co najmniej 30.")
-    config = load_project(ROOT / "scenes.json")
-    export_prompts(config)
+    config = load_project(args.config)
     scenes = config["scenes"]
     if args.scenes:
         requested = set(args.scenes)
@@ -348,17 +351,25 @@ def main():
         if missing:
             parser.error("Nieznane sceny: " + ", ".join(sorted(missing)))
         scenes = [scene for scene in scenes if scene["id"] in requested]
+    selected_config = {**config, "scenes": scenes}
+    prompt_path = ROOT / "prompty.txt" if args.config.resolve() == (ROOT / "scenes.json").resolve() else args.output / "prompty.txt"
+    export_prompts(selected_config, prompt_path)
     seconds = sum(scene["duration"] for scene in scenes)
     estimate = seconds * 0.20
     log(f"Wan 3.0 | 16:9 | 1920×1080 | {len(scenes)} ujęć | {seconds} s | szacunkowo {estimate:.2f} USD")
     for scene in scenes:
         log(f"{scene['id']}: {scene['duration']} s — {scene['title']}")
     if args.dry_run:
-        log("Zdjęcia i parametry sprawdzone. Prompty zapisane w prompty.txt. Nie wywołano API.")
+        log(f"Zdjęcia i parametry sprawdzone. Prompty zapisane w {prompt_path}. Nie wywołano API.")
         return 0
     key = ask_key(args.key_dialog, estimate)
     log("Odebrano klucz w pamięci procesu; rozpoczynam generację.")
     args.output.mkdir(parents=True, exist_ok=True)
+    snapshot = {**selected_config, "scenes": [
+        {field: value for field, value in scene.items() if field != "reference_paths"}
+        for scene in scenes
+    ]}
+    write_json(args.output / "scenes.json", snapshot)
     certificate_file = Path("/etc/ssl/cert.pem")
     context = ssl.create_default_context(cafile=str(certificate_file) if certificate_file.exists() else None)
     stop = threading.Event()
