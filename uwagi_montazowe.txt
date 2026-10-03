@@ -1,0 +1,26 @@
+UWAGI DO PIERWSZEJ GENERACJI
+
+Wszystkie ujęcia powstały w Wan 3.0 poprzez Runware, z przypisanymi
+inputs.referenceImages. Docelowe parametry: 1920×1080, poziome 16:9,
+3–5 sekund na plik. Klatki kontrolne i odtwarzacze: output/review/index.html.
+
+04_prysznic_przestaje_leciec:
+  Zanik strumienia jest widoczny. Model pokazał niewielką ilość piany
+  przy linii włosów, choć prompt przewiduje wyraźną pianę na czubku głowy.
+
+05_dziewczyna_zgloszenie i 06_babcia_zgloszenie:
+  Interfejsy i napisy na telefonach są wygenerowane. Dokładne teksty
+  oraz docelowy wygląd aplikacji wymagają podmiany w montażu.
+
+06_babcia_zgloszenie:
+  Początek klipu pokazuje babcię pod prysznicem, po czym model przechodzi
+  do zgłoszenia w szlafroku. Do montażu zgłoszenia wybierz późniejszą część.
+
+09a_kierowca_powiadomienie:
+  Widać otrzymanie powiadomienia i reakcję kierowcy, ale ekran telefonu
+  jest zwrócony do niego. Jeśli widz ma przeczytać nazwy ulic X, Y, Z,
+  potrzebna jest osobna plansza lub wstawka ekranu w montażu.
+
+Model dodał własne zmiany kadru do części ujęć pomimo polecenia
+pojedynczego ujęcia. Te pliki są pierwszą generacją materiału do montażu.
+Prompty oraz kolejność referencji są zapisane w prompty.txt i scenes.json.

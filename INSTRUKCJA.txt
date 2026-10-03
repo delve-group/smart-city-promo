@@ -1,0 +1,58 @@
+SMART CITY — WAN 3.0 / RUNWARE
+
+15 ujęć z 13 opisanych scen. Zawracanie autem oraz wyścig rodzeństwa
+podzielono na dwa ujęcia. Każde ma 3–5 sekund. Całość: 65 sekund.
+Format poziomy 16:9, 1920×1080. Jeden wynik na ujęcie, natywny dźwięk
+otoczenia, bez muzyki, lektora i automatycznego rozszerzania promptów.
+
+Pliki:
+  scenes.json          — prompty, czasy i przypisanie referencji
+  prompty.txt          — komplet gotowych promptów do przeczytania/kopiowania
+  generate_scenes.py   — skrypt, Python 3.9+, bez dodatkowych bibliotek
+  verify_videos.py     — kontrola parametrów i podgląd (FFmpeg oraz Pillow)
+  referenceimages/     — istniejące obrazy źródłowe (pozostają niezmienione)
+  output/              — pobrane MP4, stan zadań i raport kosztów
+
+Uruchom w terminalu w katalogu projektu:
+  python3 generate_scenes.py
+
+Skrypt poprosi o Runware API KEY z ukrytym wpisywaniem. Klucz pozostaje
+wyłącznie w pamięci procesu: nie jest zapisywany w plikach ani logach.
+Podanie klucza rozpoczyna wysyłanie zdjęć do Runware i płatną generację.
+Na macOS można zamiast terminala użyć ukrytego okna:
+  python3 generate_scenes.py --key-dialog
+
+Kontrola bez API i kosztów:
+  python3 generate_scenes.py --dry-run
+
+Tylko konkretne ujęcie:
+  python3 generate_scenes.py --scenes 01_gotowanie
+
+Wznowienie:
+  Uruchom ponownie tę samą komendę. Gotowe MP4 są pomijane, a istniejące
+  UUID są sprawdzane bez ponownego zlecania płatnej generacji.
+  Jeżeli zadanie zakończyło się potwierdzonym błędem, można świadomie
+  zlecić nową generację flagą --retry-failed.
+  Po zmianie promptów lub zdjęć użyj nowego katalogu, np. --output output_v2.
+
+Koszt orientacyjny: 65 s × 0,20 USD/s = 13,00 USD dla 1080p.
+Rzeczywisty koszt zwraca API (includeCost) i zapisuje generation_report.json.
+Cennik sprawdzony 3 października 2026 w dokumentacji Runware; wycena może
+ulec zmianie i nie uwzględnia ewentualnych dodatkowych opłat usługi.
+
+Referencje zostały obejrzane i przypisane do scen ręcznie po zawartości.
+Brak osobnego zdjęcia babci zgłaszającej awarię i biegu rodzeństwa po błocie:
+te ujęcia korzystają z referencji tożsamości w nowej sytuacji.
+Image 1 / Image 2 oznaczają kolejność obrazów w inputs.referenceImages.
+Referencje określają wygląd; nie wymuszają dokładnej pierwszej klatki.
+
+Ulice X, Y, Z są placeholderami w powiadomieniu. Podmień je w scenes.json,
+jeśli potrzebujesz konkretnych nazw. Model może zniekształcić tekst na
+telefonie; finalne, dokładne napisy/interfejs najlepiej nałożyć w montażu.
+Ikony zgłoszenia oraz potwierdzenia są opisane w promptach.
+
+Źródła API:
+  https://runware.ai/docs/models/alibaba-wan3-0
+  https://runware.ai/docs/models/alibaba-wan3-0/guides/image-inputs
+  https://runware.ai/docs/models-api/authentication
+  https://runware.ai/docs/models-api/task-polling
